@@ -1,1 +1,12 @@
+name: Reusable-CD-workflow
+on: workflow_call
+jobs:
+  deploy:
+     runs-on: ubuntu-latest
+     steps:
+       - name: chekout
+         uses: actions/checkout@v4
+
+       - name: deploy application
+         uses: arif511basha/Shared-deployment-action@main
 
